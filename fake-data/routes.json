@@ -1,0 +1,7 @@
+{
+  "/api/v1/Users/:identityNumber": "/users?identityNumber=:identityNumber",
+  "/api/v1/Vehicle/:assetPk": "/vehicle?assetPk=:assetPk",
+  "/api/v1/Vehicle/:assetPk/history": "/vehicle-history?assetPk=:assetPk",
+  "/api/v1/VehicleChecks": "/vehicle-checks/",
+  "/api/v1/VehicleReports": "/report-overview/"
+}

@@ -1,0 +1,450 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "identityNumber": "123116",
+      "dcLocationId": 3,
+      "dcLocationCode": "MMS-0082",
+      "email": "akis@vehicle-checkout.ie",
+      "upn": "akis@vehicle-checkout.ie",
+      "fullName": "Akis Kouzinopoulos",
+      "firstName": "akis",
+      "lastName": "kouzinopoulos",
+      "manager": "jhon, doe",
+      "managerEmail": "manager@test.com",
+      "companyName": "VehicleTracker",
+      "isContractWorker": false,
+      "role": 2,
+      "certificates": [
+        {
+          "id": 52,
+          "userId": 1,
+          "vehicleTypeId": 11,
+          "vehicleTypeName": "Clark",
+          "certificateTypeId": 1,
+          "certificateTypeName": "Temporary New Operator",
+          "expiryDate": "2023-09-02T00:00:00Z",
+          "certifiedOn": "2021-09-09T00:00:00Z",
+          "createdOn": "2021-09-22T09:22:44.5431389Z",
+          "createdBy": null
+        },
+        {
+          "id": 52,
+          "userId": 1,
+          "vehicleTypeId": 13,
+          "vehicleTypeName": "Clark",
+          "certificateTypeId": 1,
+          "certificateTypeName": "Temporary New Operator",
+          "expiryDate": "2022-02-08T00:00:00Z",
+          "certifiedOn": "2021-09-09T00:00:00Z",
+          "createdOn": "2021-09-22T09:22:44.5431389Z",
+          "createdBy": null
+        }
+      ],
+      "dcLocations": [
+        {
+          "dcLocationId": 1,
+          "dcLocationCode": "0060",
+          "dcLocationName": "Grapevine, TX, USA - 4250 Patriot Drive (A060)",
+          "roleId": 3,
+          "isDefault": false
+        },
+        {
+          "dcLocationId": 3,
+          "dcLocationCode": "MMS-0082",
+          "dcLocationName": "AZ, Tempe/Phoenix 7343 South Hardy Dr (A082)",
+          "roleId": 2,
+          "isDefault": true
+        }
+      ]
+    }
+  ],
+  "vehicle": [
+    {
+      "id": 229,
+      "dcLocationCode": "0060",
+      "serialNumber": "456123",
+      "unitNumber": "17",
+      "assetPk": 41246,
+      "assetId": "CLARK-17",
+      "name": "#17 Clark",
+      "statusId": 4,
+      "statusName": "Available",
+      "vehicleTypeId": 11,
+      "vehicleTypeName": "Clark",
+      "lastUsed": null,
+      "isRental": true,
+      "certificateRequired": true,
+      "model": "model1",
+      "manufacturer": "Mitsubishi"
+    },
+    {
+      "id": 118,
+      "dcLocationCode": "0060",
+      "serialNumber": "1A219015",
+      "unitNumber": "202",
+      "assetPk": 41130,
+      "assetId": "USCLRK01-202",
+      "name": "#202 Clark",
+      "statusId": 1,
+      "statusName": "Retired",
+      "vehicleTypeId": 13,
+      "vehicleTypeName": "Clark",
+      "lastUsed": "2021-09-23T20:53:37.1950253Z",
+      "isRental": false,
+      "certificateRequired": true,
+      "model": "",
+      "manufacturer": "BMW"
+    },
+    {
+      "id": 128,
+      "dcLocationCode": "0060",
+      "serialNumber": "1A204497",
+      "unitNumber": "212",
+      "assetPk": 41140,
+      "assetId": "ClarkUSCLRK02-212",
+      "name": "#212 Clark",
+      "statusId": 3,
+      "statusName": "Out of Service",
+      "vehicleTypeId": 13,
+      "vehicleTypeName": "Clark",
+      "lastUsed": "2022-02-17T20:59:51.1845619Z",
+      "isRental": false,
+      "certificateRequired": true,
+      "model": "",
+      "manufacturer": "BMW"
+    }
+  ],
+  "vehicle-history": [
+    {
+      "assetPk": 41246,
+      "vehicleReportId": 71,
+      "reportedBy": "Jhon Doe",
+      "reportedOn": "2021-09-23T20:53:37.1950253Z",
+      "vehicleReportTypeId": 2,
+      "vehicleReportTypeName": "Out of Service",
+      "closedOn": "2022-01-05T19:35:59.09",
+      "workOrderId": "0060-101402",
+      "isManualEntry": false,
+      "trainer": "some name",
+      "vehicleName": "some name"
+    },
+    {
+      "assetPk": 41246,
+      "vehicleReportId": 18,
+      "reportedBy": "User05",
+      "reportedOn": "2021-05-20T20:11:25.7953498Z",
+      "vehicleReportTypeId": 2,
+      "vehicleReportTypeName": "Out of Service",
+      "closedOn": "2022-01-05T19:35:59.09",
+      "workOrderId": "0060-94689",
+      "isManualEntry": false,
+      "trainer": "some name",
+      "vehicleName": "some name"
+    },
+    {
+      "assetPk": 41246,
+      "vehicleReportId": 34,
+      "reportedBy": "User08",
+      "reportedOn": "2021-05-20T04:05:00Z",
+      "vehicleReportTypeId": 1,
+      "vehicleReportTypeName": "Checked Out",
+      "closedOn": "2022-01-05T19:35:59.09",
+      "workOrderId": "0060-94689",
+      "isManualEntry": true,
+      "trainer": "some name",
+      "vehicleName": "some name"
+    }
+  ],
+  "vehicle-checks": [
+    {
+      "id": 1,
+      "title": "Damaged Parts",
+      "subtitle": "Bent, dented, broken",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 2,
+      "title": "Leaks",
+      "subtitle": "Drive unit, brakes, hydraulics",
+      "vehicleCheckTypeId": 2,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 4,
+      "title": "Tires & Wheels",
+      "subtitle": "Drive wheels, steer wheels, load wheels, etc",
+      "vehicleCheckTypeId": 3,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 3,
+      "title": "Forks",
+      "subtitle": "Secure, not bent, cracked or badly worn",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 5,
+      "title": "Chains, Cables & Hose",
+      "subtitle": "Secure, not bent, cracked or badly worn",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 6,
+      "title": "Battery",
+      "subtitle": "Battery cable and connector condition, Cable routing (not outside of truck) Battery retainer securely in place",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 7,
+      "title": "Guards",
+      "subtitle": "All guards in place and good condition. Overhead, load backrest, etc. Gates and side rails",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 8,
+      "title": "Mechanical Safety Devices",
+      "subtitle": "Safety shield, entry bar, hour meter, warning labels, other gauges and instruments in good condition",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 9,
+      "title": "Operator Compartment/Controls",
+      "subtitle": "ALl controls, steer tiller, pedals etc in good condition. Seatbelt, harness and tether in good condition. Pallet grab/release",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 10,
+      "title": "Fire Extinguisher",
+      "subtitle": "Attached and charged",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Visual"
+    },
+    {
+      "id": 11,
+      "title": "Power Up",
+      "subtitle": "Turn on key. All indicator lights and alarms working",
+      "vehicleCheckTypeId": 2,
+      "vehicleCheckTypeName": "Operational"
+    },
+    {
+      "id": 12,
+      "title": "Electrical Safety Devices",
+      "subtitle": "Horn audible, head and tail lights, flashing lights, warning lights, etc. working properly",
+      "vehicleCheckTypeId": 2,
+      "vehicleCheckTypeName": "Operational"
+    },
+    {
+      "id": 13,
+      "title": "Steering",
+      "subtitle": "No binding, no excessive play",
+      "vehicleCheckTypeId": 2,
+      "vehicleCheckTypeName": "Operational"
+    },
+    {
+      "id": 14,
+      "title": "Brakes",
+      "subtitle": "Check braking and parking brakes. Check at slow speed initial, accelerate if okay",
+      "vehicleCheckTypeId": 2,
+      "vehicleCheckTypeName": "Operational"
+    },
+    {
+      "id": 15,
+      "title": "Travel Controls",
+      "subtitle": "Check vehicle movement forward and reverse. Acceleration smooth, not jerky",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Operational"
+    },
+    {
+      "id": 16,
+      "title": "Hydraulic Controls",
+      "subtitle": "Test all hydraulic functions (lift, tilt, side shift) for smooth and proper operation and no unusual noise",
+      "vehicleCheckTypeId": 2,
+      "vehicleCheckTypeName": "Operational"
+    },
+    {
+      "id": 17,
+      "title": "Battery Charge",
+      "subtitle": "Discharge meter in full green or 75% charge after turning on and raising forks",
+      "vehicleCheckTypeId": 1,
+      "vehicleCheckTypeName": "Operational"
+    }
+  ],
+  "vehicle-reports": [
+    {
+      "reportedByUserId": 1,
+      "vehicleId": 128,
+      "issues": [
+        {
+          "vehicleCheckId": 1,
+          "userComment": "flat tyre",
+          "vehicleCheckStatusId": 2
+        },
+        {
+          "vehicleCheckId": 2,
+          "userComment": "broken wiper",
+          "vehicleCheckStatusId": 2
+        },
+        {
+          "vehicleCheckId": 3,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 4,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 5,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 6,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 7,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 8,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 9,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 10,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 11,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 12,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 13,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 14,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 15,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 16,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        },
+        {
+          "vehicleCheckId": 17,
+          "userComment": "",
+          "vehicleCheckStatusId": 1
+        }
+      ]
+    }
+  ],
+  "report-overview": {
+    "reportedByUserId": 1,
+    "reportedOn": "2022-09-30T13:24:58.991Z",
+    "trainerId": "",
+    "vehicleId": 229,
+    "issues": [
+      {
+        "vehicleCheckId": 1,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 2,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 4,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 3,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 5,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 6,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 7,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 8,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 9,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 10,
+        "vehicleCheckStatusId": "NotApplicable"
+      },
+      {
+        "vehicleCheckId": 11,
+        "vehicleCheckStatusId": "AttentionNeeded"
+      },
+      {
+        "vehicleCheckId": 12,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 13,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 14,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 15,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 16,
+        "vehicleCheckStatusId": "OK"
+      },
+      {
+        "vehicleCheckId": 17,
+        "vehicleCheckStatusId": "OK"
+      }
+    ],
+    "isManualEntry": false
+  }
+}

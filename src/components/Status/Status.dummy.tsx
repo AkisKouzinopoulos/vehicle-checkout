@@ -1,0 +1,18 @@
+export const vehicleObj = {
+  id: 118,
+  dcLocationCode: '0060',
+  serialNumber: '1A219015',
+  unitNumber: '202',
+  assetPk: 41130,
+  assetId: 'USCLRK01-202',
+  name: '#202 Clark',
+  statusId: 1,
+  statusName: 'Available',
+  vehicleTypeId: 13,
+  vehicleTypeName: 'Clark',
+  lastUsed: '2021-09-23T20:53:37.1950253Z',
+  isRental: false,
+  certificateRequired: true,
+  model: '',
+  manufacturer: 'BMW',
+};
