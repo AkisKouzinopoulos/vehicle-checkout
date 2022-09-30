@@ -17,7 +17,7 @@ describe('testing the HistoryListItem', () => {
     render(<HistoryListItem history={historyItemObj} />);
     const historyListItemSVG = screen.getByTestId('svgImage');
     const historyListItemMiddleTxt = screen.getByText(/out of service/i);
-    const historyListItemUserTxt = screen.getByText(/andrew palet/i);
+    const historyListItemUserTxt = screen.getByText(/Jhon Doe/i);
     expect(historyListItemSVG).toBeTruthy();
     expect(historyListItemMiddleTxt).toBeTruthy();
     expect(historyListItemUserTxt).toBeTruthy();

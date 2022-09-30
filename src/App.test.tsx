@@ -8,7 +8,7 @@ describe('testing the App', () => {
 
   it('renders a text', () => {
     render(<App />);
-    const text = screen.getByRole('heading', { name: /vehicle checkout/i });
+    const text = screen.getByRole('heading', { name: /vct checkout/i });
     expect(text).toBeTruthy();
   });
 });
